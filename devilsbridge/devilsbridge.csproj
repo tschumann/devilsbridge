@@ -45,7 +45,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Program.cs" />
+    <Compile Include="aiplayer.cs" />
+    <Compile Include="card.cs" />
+    <Compile Include="deck.cs" />
+    <Compile Include="game.cs" />
+    <Compile Include="iplayer.cs" />
+    <Compile Include="player.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
