@@ -1,7 +1,7 @@
 ﻿
 class Card
 {
-    enum Suit
+    public enum Suit
     {
         SPADES = 0,
         DIAMONDS = 1,
@@ -9,7 +9,7 @@ class Card
         HEARTS = 3,
     }
 
-    enum Rank
+    public enum Rank
     {
         TWO,
         THREE,

@@ -1,4 +1,5 @@
 ﻿
 interface IPlayer
 {
+    Card play();
 }
