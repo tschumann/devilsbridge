@@ -10,5 +10,9 @@ namespace devilsbridge
         static void Main(string[] args)
         {
         }
+
+        public void deal()
+        {
+        }
     }
 }

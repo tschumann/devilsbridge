@@ -7,6 +7,8 @@ class Card
         DIAMONDS = 1,
         CLUBS = 2,
         HEARTS = 3,
+        BLACK = 100,
+        RED = 101,
     }
 
     public enum Rank

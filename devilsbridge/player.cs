@@ -6,6 +6,12 @@ class Player : IPlayer
 
     public Card play()
     {
-        return hand[0];
+        Card card = null;
+
+        // TODO: extend List to have a pop method?
+        card = hand[0];
+        hand.RemoveAt(0);
+
+        return card;
     }
 }

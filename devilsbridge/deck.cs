@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 class Deck
 {
@@ -8,7 +9,14 @@ class Deck
     {
         this.deck = new List<Card>(54);
 
-
+        foreach (Card.Rank rank in Enum.GetValues(typeof(Card.Rank)))
+        {
+            foreach (Card.Suit suit in Enum.GetValues(typeof(Card.Suit)))
+            {
+                // TODO: deal with jokers
+                this.deck.Add(new Card(suit, rank));
+            }
+        }
     }
 
     public void shuffle()
