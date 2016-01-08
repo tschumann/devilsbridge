@@ -1,8 +1,13 @@
 ﻿using System.Collections.Generic;
 
-class Player : IPlayer
+class Player : ICardPlayer
 {
     private List<Card> hand;
+
+    public Player()
+    {
+        this.hand = new List<Card>();
+    }
 
     public Card play()
     {
@@ -13,5 +18,10 @@ class Player : IPlayer
         hand.RemoveAt(0);
 
         return card;
+    }
+
+    public void receive(Card card)
+    {
+        this.hand.Add(card);
     }
 }

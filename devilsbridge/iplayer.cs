@@ -1,5 +1,0 @@
-﻿
-interface IPlayer
-{
-    Card play();
-}
