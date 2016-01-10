@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AIPlayer.cs" />
+    <Compile Include="csharp-card\AbstractCardPlayer.cs" />
     <Compile Include="csharp-card\Card.cs" />
     <Compile Include="csharp-card\Deck.cs" />
     <Compile Include="csharp-card\ICardPlayer.cs" />

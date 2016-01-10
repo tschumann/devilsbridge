@@ -1,15 +1,8 @@
 ﻿using System.Collections.Generic;
 
-class Player : Card.ICardPlayer
+class Player : Card.AbstractCardPlayer
 {
-    private List<Card.Card> hand;
-
-    public Player()
-    {
-        this.hand = new List<Card.Card>();
-    }
-
-    public Card.Card play()
+    public override Card.Card play()
     {
         Card.Card card = null;
 
@@ -18,10 +11,5 @@ class Player : Card.ICardPlayer
         hand.RemoveAt(0);
 
         return card;
-    }
-
-    public void receive(Card.Card card)
-    {
-        this.hand.Add(card);
     }
 }
