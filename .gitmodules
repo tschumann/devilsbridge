@@ -1,0 +1,3 @@
+[submodule "devilsbridge/csharp-card"]
+	path = devilsbridge/csharp-card
+	url = https://github.com/tschumann/csharp-card

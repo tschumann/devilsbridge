@@ -45,12 +45,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="aiplayer.cs" />
-    <Compile Include="card\card.cs" />
-    <Compile Include="card\deck.cs" />
-    <Compile Include="game.cs" />
-    <Compile Include="card\icardplayer.cs" />
-    <Compile Include="player.cs" />
+    <Compile Include="AIPlayer.cs" />
+    <Compile Include="csharp-card\Card.cs" />
+    <Compile Include="csharp-card\Deck.cs" />
+    <Compile Include="csharp-card\ICardPlayer.cs" />
+    <Compile Include="Game.cs" />
+    <Compile Include="Player.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

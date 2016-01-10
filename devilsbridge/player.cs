@@ -1,17 +1,17 @@
 ﻿using System.Collections.Generic;
 
-class Player : ICardPlayer
+class Player : Card.ICardPlayer
 {
-    private List<Card> hand;
+    private List<Card.Card> hand;
 
     public Player()
     {
-        this.hand = new List<Card>();
+        this.hand = new List<Card.Card>();
     }
 
-    public Card play()
+    public Card.Card play()
     {
-        Card card = null;
+        Card.Card card = null;
 
         // TODO: extend List to have a pop method?
         card = hand[0];
@@ -20,7 +20,7 @@ class Player : ICardPlayer
         return card;
     }
 
-    public void receive(Card card)
+    public void receive(Card.Card card)
     {
         this.hand.Add(card);
     }
