@@ -49,7 +49,10 @@
     <Compile Include="csharp-card\AbstractCardPlayer.cs" />
     <Compile Include="csharp-card\Card.cs" />
     <Compile Include="csharp-card\Deck.cs" />
+    <Compile Include="csharp-card\ICard.cs" />
     <Compile Include="csharp-card\ICardPlayer.cs" />
+    <Compile Include="csharp-card\ITeam.cs" />
+    <Compile Include="csharp-card\Team.cs" />
     <Compile Include="Game.cs" />
     <Compile Include="Player.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

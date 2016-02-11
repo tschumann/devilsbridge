@@ -12,4 +12,10 @@ class Player : Card.AbstractCardPlayer
 
         return card;
     }
+
+    public override Card.Card swap(Card.Card card)
+    {
+        // TODO: does this game have swapping?
+        throw new System.NotImplementedException();
+    }
 }
