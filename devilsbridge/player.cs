@@ -1,7 +1,16 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 
 class Player : Card.AbstractCardPlayer
 {
+    public Player(Card.IGame game) : base(game)
+    {
+        if (game == null)
+        {
+            throw new Exception();
+        }
+    }
+
     public override Card.Card play()
     {
         Card.Card card = null;

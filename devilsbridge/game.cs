@@ -1,11 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
 namespace devilsbridge
 {
-    class game
+    class Game : Card.IGame
     {
         static void Main(string[] args)
         {
