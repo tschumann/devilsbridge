@@ -2,7 +2,7 @@
 
 namespace devilsbridge
 {
-    public class AIPlayer : Player
+    public class AIPlayer : DevilsBridgePlayer
     {
         public AIPlayer(Card.IGame game) : base(game)
         {

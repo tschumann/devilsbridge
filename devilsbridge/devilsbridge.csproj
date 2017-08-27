@@ -60,7 +60,7 @@
     <Compile Include="csharp-card\ITeam.cs" />
     <Compile Include="csharp-card\Team.cs" />
     <Compile Include="Game.cs" />
-    <Compile Include="Player.cs" />
+    <Compile Include="DevilsBridgePlayer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
