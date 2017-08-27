@@ -2,9 +2,9 @@
 
 namespace devilsbridge
 {
-    public class Player : Card.AbstractCardPlayer
+    public class DevilsBridgePlayer : Card.AbstractCardPlayer
     {
-        public Player(Card.IGame game) : base(game)
+        public DevilsBridgePlayer(Card.IGame game) : base(game)
         {
             if (game == null)
             {

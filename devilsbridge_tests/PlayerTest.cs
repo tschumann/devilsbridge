@@ -10,7 +10,7 @@ namespace devilsbridge_tests
         [ExpectedException(typeof(Exception), "A null game was passed to the constructor.")]
         public void testInstantiateNull()
         {
-            devilsbridge.Player player = new devilsbridge.Player(null);
+            devilsbridge.DevilsBridgePlayer player = new devilsbridge.DevilsBridgePlayer(null);
         }
     }
 }
