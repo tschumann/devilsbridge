@@ -1,12 +1,15 @@
 ﻿using System;
 
-class AIPlayer : Player
+namespace devilsbridge
 {
-    public AIPlayer(Card.IGame game) : base(game)
+    public class AIPlayer : Player
     {
-        if (game == null)
+        public AIPlayer(Card.IGame game) : base(game)
         {
-            throw new Exception();
+            if (game == null)
+            {
+                throw new Exception();
+            }
         }
     }
 }

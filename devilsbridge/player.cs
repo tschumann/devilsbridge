@@ -1,30 +1,32 @@
 ﻿using System;
-using System.Collections.Generic;
 
-class Player : Card.AbstractCardPlayer
+namespace devilsbridge
 {
-    public Player(Card.IGame game) : base(game)
+    public class Player : Card.AbstractCardPlayer
     {
-        if (game == null)
+        public Player(Card.IGame game) : base(game)
         {
-            throw new Exception();
+            if (game == null)
+            {
+                throw new Exception();
+            }
         }
-    }
 
-    public override Card.Card play()
-    {
-        Card.Card card = null;
+        public override Card.Card play()
+        {
+            Card.Card card = null;
 
-        // TODO: extend List to have a pop method?
-        card = hand[0];
-        hand.RemoveAt(0);
+            // TODO: extend List to have a pop method?
+            card = hand[0];
+            hand.RemoveAt(0);
 
-        return card;
-    }
+            return card;
+        }
 
-    public override Card.Card swap(Card.Card card)
-    {
-        // TODO: does this game have swapping?
-        throw new System.NotImplementedException();
+        public override Card.Card swap(Card.Card card)
+        {
+            // TODO: does this game have swapping?
+            throw new System.NotImplementedException();
+        }
     }
 }
