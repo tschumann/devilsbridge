@@ -9,15 +9,25 @@ namespace devilsbridge
         private List<ICardPlayer> players;
         private Deck deck;
 
-        public Game()
+        public Game(int playerCount)
         {
-            this.players = new List<ICardPlayer>();
             this.deck = new Deck(this, false);
+            this.players = new List<ICardPlayer>(playerCount);
+
+            for (int i = 0; i < playerCount; i++)
+            {
+                this.players.Add(new DevilsBridgePlayer(this));
+            }
         }
 
         public void deal()
         {
             this.deck.shuffle();
+        }
+
+        public List<ICardPlayer> getPlayers()
+        {
+            return this.players;
         }
 
         static void Main(string[] args)
